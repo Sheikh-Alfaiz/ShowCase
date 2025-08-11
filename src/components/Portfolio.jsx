@@ -14,18 +14,18 @@ import Footer from "./Footer";
 
 
 const Portfolio = () => {
-  const [darkMode, setDarkMode] = useState(false);
+ const [darkMode, setDarkMode] = useState(() => {
+  if (localStorage.theme === "dark") return true;
+  if (localStorage.theme === "light") return false;
+  return window.matchMedia("(prefers-color-scheme: dark)").matches;
+});
   const [activeSection, setActiveSection] = useState("home");
 
-  useEffect(() => {
-  if (darkMode) {
-    document.documentElement.classList.remove("light");
-    document.documentElement.classList.add("dark");
-  } else {
-    document.documentElement.classList.remove("dark");
-     document.documentElement.classList.add("light");
-  }
+ useEffect(() => {
+  document.documentElement.classList.toggle("dark", darkMode);
+  localStorage.setItem("theme", darkMode ? "dark" : "light");
 }, [darkMode]);
+
   // Intersection Observer for section detection
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");

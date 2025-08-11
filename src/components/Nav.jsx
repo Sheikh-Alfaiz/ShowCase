@@ -12,9 +12,28 @@ const Nav = ({ darkMode, setDarkMode, activeSection }) => {
           <div className="flex justify-between items-center py-4">
             <div className="text-2xl font-bold cursor-pointer hover:scale-105 transform transition-transform duration-200
   text-gray-900 dark:text-white bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text 
-  hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 hover:bg-clip-text hover:text-transparent">
+  dark:hover:bg-gradient-to-r dark:hover:from-blue-500 dark:hover:to-purple-600 hover:bg-clip-text hover:text-transparent">
               Sheikh Altaf
             </div>
+            <div
+  className="
+    text-2xl font-bold cursor-pointer
+    transform transition-transform duration-200 hover:scale-105
+
+    /* Light mode: always colorful */
+    bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500
+    text-transparent bg-clip-text
+
+    /* Dark mode: white text by default */
+    dark:text-white dark:bg-none
+
+    /* Dark mode hover: colorful gradient */
+    dark:hover:bg-gradient-to-r dark:hover:from-blue-500 dark:hover:via-purple-500 dark:hover:to-pink-500
+    dark:hover:text-transparent dark:hover:bg-clip-text
+  "
+>
+  Sheikh Altaf
+</div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
@@ -100,7 +119,7 @@ const Nav = ({ darkMode, setDarkMode, activeSection }) => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white dark:hover:bg-gray-700 rounded-2xl duration-200 transform"
+                  className="block px-3 py-2 hover:bg-gray-300  text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white dark:hover:bg-gray-700 rounded-2xl duration-200 transform"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}

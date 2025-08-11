@@ -24,7 +24,7 @@ const educationData = [
 
 const EducationSection = () => {
   return (
-    <section id="education" className="relative py-20 px-6 md:px-16 bg-gradient-to-b dark:from-gray-900/50 dark:to-gray-950/50 text-white">
+    <section id="education" className="relative py-20 px-6 md:px-16 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900/50 dark:to-gray-950/50 text-white">
       <div className="max-w-5xl mx-auto">
         {/* Section Title */}
         <motion.h2
