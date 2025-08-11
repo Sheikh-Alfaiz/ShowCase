@@ -62,7 +62,8 @@ transition-all duration-300 hover:shadow-lg"
 
           <TextReveal
             text="Sheikh Altaf"
-            className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 transition-all duration-300 hover:scale-105 dark:hover:shadow-lg 
+            dark:text-white bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
           />
 
           <div className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 h-8 animate-in fade-in slide-in-from-bottom duration-700 delay-500">

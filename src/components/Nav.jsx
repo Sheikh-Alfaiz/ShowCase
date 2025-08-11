@@ -11,7 +11,7 @@ const Nav = ({ darkMode, setDarkMode, activeSection }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="text-2xl font-bold cursor-pointer hover:scale-105 transform transition-transform duration-200
-  text-gray-900 dark:text-white
+  text-gray-900 dark:text-white bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text 
   hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 hover:bg-clip-text hover:text-transparent">
               Sheikh Altaf
             </div>
@@ -54,7 +54,7 @@ const Nav = ({ darkMode, setDarkMode, activeSection }) => {
                 </a>
               ))}
 
-              {/* <button
+              <button
                 onClick={() => setDarkMode(!darkMode)}
                 className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:scale-110 transform transition-transform duration-200"
               >
@@ -63,12 +63,12 @@ const Nav = ({ darkMode, setDarkMode, activeSection }) => {
                 ) : (
                   <Moon className="w-5 h-5" />
                 )}
-              </button> */}
+              </button>
             </div>
 
             {/* Mobile menu button */}
             <div className="flex md:hidden items-center space-x-4">
-              {/* <button
+              <button
                 onClick={() => setDarkMode(!darkMode)}
                 className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:scale-105 transform transition-transform duration-200"
               >
@@ -77,7 +77,7 @@ const Nav = ({ darkMode, setDarkMode, activeSection }) => {
                 ) : (
                   <Moon className="w-5 h-5" />
                 )}
-              </button> */}
+              </button>
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:scale-105 transform transition-transform duration-200"

@@ -59,10 +59,10 @@ const EducationSection = () => {
                 <h3 className="text-lg md:text-xl font-semibold text-blue-400 group-hover:text-purple-400 transition-colors">
                   {item.degree}
                 </h3>
-                <p className="text-gray-300">{item.institution}</p>
+                <p className="dark:text-gray-300 text-gray-500">{item.institution}</p>
 
                 {/* Duration & Grade */}
-                <div className="flex flex-col md:flex-row md:justify-between mt-2 text-sm text-gray-400">
+                <div className="flex flex-col md:flex-row md:justify-between mt-2 text-sm dark:text-gray-400 text-gray-500">
                   <span>{item.duration}</span>
                   <span className="mt-1 md:mt-0">{item.grade}</span>
                 </div>

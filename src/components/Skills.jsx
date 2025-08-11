@@ -69,7 +69,7 @@ const Skills = () => {
                 {skillList.map((skill, idx) => (
                   <li
                     key={idx}
-                    className="flex items-center gap-3 text-gray-700 dark:text-gray-300 hover:text-blue-500 hover:scale-105 transition-colors duration-300"
+                    className="flex items-center gap-3 text-gray-700 dark:text-gray-300 hover:text-blue-500 transition-colors duration-300"
                   >
                     <span className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse" />
                     {skill}

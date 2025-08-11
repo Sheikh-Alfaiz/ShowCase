@@ -14,14 +14,16 @@ import Footer from "./Footer";
 
 
 const Portfolio = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
   if (darkMode) {
+    document.documentElement.classList.remove("light");
     document.documentElement.classList.add("dark");
   } else {
     document.documentElement.classList.remove("dark");
+     document.documentElement.classList.add("light");
   }
 }, [darkMode]);
   // Intersection Observer for section detection

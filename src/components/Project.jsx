@@ -95,7 +95,7 @@ const Project = () => {
                   {project.tech.map((tech, idx) => (
                     <span
                       key={idx}
-                      className="px-3 py-1 bg-gray-950/40 hover:scale-105 duration-300 transform transition-all text-gray-400 dark:text-white rounded-full text-xs font-medium"
+                      className="px-3 py-1 bg-gray-800 dark:bg-gray-950/40 hover:scale-105 duration-300 transform transition-all text-gray-200 dark:text-white rounded-full text-xs font-medium"
                     >
                       {tech}
                     </span>
