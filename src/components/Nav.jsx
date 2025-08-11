@@ -10,11 +10,11 @@ const Nav = ({ darkMode, setDarkMode, activeSection }) => {
       <nav className="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md z-40 border-b border-gray-200 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="text-2xl font-bold cursor-pointer hover:scale-105 transform transition-transform duration-200
+            {/* <div className="text-2xl font-bold cursor-pointer hover:scale-105 transform transition-transform duration-200
   text-gray-900 dark:text-white bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text 
   dark:hover:bg-gradient-to-r dark:hover:from-blue-500 dark:hover:to-purple-600 hover:bg-clip-text hover:text-transparent">
               Sheikh Altaf
-            </div>
+            </div> */}
             <div
   className="
     text-2xl font-bold cursor-pointer

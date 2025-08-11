@@ -8,8 +8,18 @@ const Project = () => {
   return (
     <section
       id="projects"
-      className="py-20 px-4 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900/50 dark:to-gray-950/50"
+      className="relative py-20 px-4 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900/50 dark:to-gray-950/50"
     >
+
+{/* Animated background elements */}
+<div className="absolute inset-0 overflow-hidden pointer-events-none">
+  {/* Top-left blob */}
+  <div className="absolute -top-40 -left-40 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-purple-600/20 rounded-full blur-3xl animate-pulse"></div>
+
+  {/* Bottom-right blob */}
+  <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-gradient-to-br from-purple-400/20 to-pink-600/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+</div>
+
       <div data-aos="fade-up"
       className="max-w-7xl mx-auto">
         {/* Section Header */}
